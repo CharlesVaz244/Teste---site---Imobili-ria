@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EncontraLar - Cadastro e Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar simplificada -->
+    <nav class="navbar">
+        <div class="logo">EncontraLar</div>
+        <a href="EncontraLar.html" class="cta-button">Voltar ao Início</a>
+    </nav>
+
+    <section class="auth-section">
+        <div class="auth-container">
+            <div class="auth-buttons">
+                <button onclick="showLogin()" id="login-btn" class="active">Login</button>
+                <button onclick="showRegister()" id="register-btn">Cadastrar-se</button>
+            </div>
+
+            <!-- Formulário de Login -->
+            <form id="login-form" class="auth-form">
+                <h2>Login</h2>
+                <label for="email-login">Email:</label>
+                <input type="email" id="email-login" name="email" required>
+                <label for="password-login">Senha:</label>
+                <input type="password" id="password-login" name="password" required>
+                <button type="submit" class="cta-button">Entrar</button>
+            </form>
+
+            <!-- Formulário de Cadastro -->
+            <form id="register-form" class="auth-form" style="display: none;">
+                <h2>Cadastrar-se</h2>
+                <label for="email-register">Email:</label>
+                <input type="email" id="email-register" name="email" required>
+                <label for="username-register">Nome de Usuário:</label>
+                <input type="text" id="username-register" name="username" required>
+                <label for="password-register">Senha:</label>
+                <input type="password" id="password-register" name="password" required>
+                <button type="submit" class="cta-button">Cadastrar</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
